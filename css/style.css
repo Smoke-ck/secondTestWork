@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  min-width: 320px;
+}
+
+.parent {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: aliceblue;
+}
+
+.content {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.content__validButton {
+  width: 100px;
+  background-color: #ffc9d6;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.content__validButton:hover {
+  background-color: #ff9db7;
+}
+.content__value {
+  margin: 20px 0;
+}
+.content__choise {
+  display: none;
+}
+.content__choise + .label {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: #ccc;
+  margin-top: 10px;
+}
+.content__choise + .label::before {
+  display: block;
+  content: attr(data-off-label);
+  position: absolute;
+  top: 6px;
+  right: 4px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+  color: #999;
+}
+.content__choise + .label::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.content__choise:checked + .label::before {
+  content: attr(data-on-label);
+  left: 8px;
+  right: auto;
+  color: #fff;
+  color: #fff;
+}
+.content__choise:checked + .label::after {
+  left: 35px;
+  background-color: #f7f7f7;
+}
+.content__choise:checked + .label {
+  background-color: #3498db;
+}
+.content__choise:checked + .label::before {
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */

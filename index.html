@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="parent">
+        <div class="content">
+            <input type="checkbox" id="checker" checked class="content__choise">
+            <label for="checker" data-on-label="Вкл." data-off-label="Выкл." class="label"></label>
+            <input type="text" id="firstValue" placeholder="Валидационная проверка" class="content__value">
+            <button id="action" class="content__validButton">Submit</button>
+            <p>Your status : <span id="output"></span>.</p>
+            <label><input type="checkbox" id="checkIP">IP</label>
+            <input id="name2" name="name2" placeholder="IP" disabled class="content__value" />
+            <button id="action2" class="content__validButton">Submit</button>
+            <p>Your status : <span id="output2"></span>.</p>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
